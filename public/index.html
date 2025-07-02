@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHEZZY</title>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div><h1 id="heading" class="headings">INTRODUCING OUR AI MODELS</h1></div>
+        <div class="dropdown">
+            <div ><img src="png_rsfpl.png" width="40px" class="dropbtn" onclick="toggleDropdown()" >
+        <div id="myDropdown" class="dropdown-content">
+
+       <a href="shezzy.html"  class="model">SHEZZY</a>
+       <a href="brog.html" class="model">BROG for Image Generation</a>
+       <a href="contact.html"  class="model">Contact Us</a>
+     </div>
+    </div>
+    </div>
+    <h2 class="sub-heading" class="headings">SHEZZY & BROG</h2>
+    
+    <div id="buttondiv">
+        
+        <a href="shezzy.html"><button class="aibtn">SHEZZY</button></a>
+         <a href="brog.html"><button class="aibtn" >BROG</button></a>
+    </div>
+    <div id="infoGrid">
+        <p class="about" id="aboutshezzy">SHEZZY: <br><br> Shezzy is a versatile AI-powered assistant designed to engage in natural, intelligent conversations. It excels as a chatbot, text generator, and Q&A tool, making it ideal for personal use, customer support, educational help, and content creation.
+            <br><br>Key Features:<br><br>
+1. Conversational Intelligence:
+SHEZZY can hold human-like conversations, responding contextually to questions, emotions, or commands. It can chat casually or assist with more structured tasks.
+<br>
+2. Text Generation:
+From writing essays and articles to generating code, shezzy can create well-structured, original text based on user prompts. It's useful for students, developers, writers, and professionals.
+<br>
+3. Q&A Engine:
+Whether it’s academic questions, general knowledge, or troubleshooting, SHEZZY offers clear and accurate answers, adapting to the user's level of understanding.
+<br>
+4. Custom Personality:
+SHEZZY is customizable in tone and style—formal, friendly, witty, or professional—depending on where it's deployed (e.g., classroom, website, app).
+<br>
+5. Multilingual Capabilities:
+It supports interaction in multiple languages, broadening accessibility across regions.
+<br><br>
+Uses:<br><br>
+Educational Assistant: Answers questions in subjects like science, math, history, etc.
+<br>
+Customer Support Chatbot: Resolves user queries with 24/7 availability.
+<br>
+Creative Writing Partner: Helps brainstorm, draft, or edit creative content.
+<br>
+Developer Aid: Generates and explains code in multiple programming languages.
+<br>
+Productivity Assistant: Helps with emails, reports, summaries, and notes.
+        </p>
+
+        <p class="about" id="aboutbrog">
+            BROG – AI-Powered Image Generation System:<br><br>
+Brog is an advanced Image Generation AI designed to transform text prompts, sketches, or concept ideas into high-quality visual content. Powered by deep learning and generative models, Brog can produce illustrations, realistic images, digital art, concept designs, and more based on user input.
+<br><br>
+Core Capabilities of Brog:<br><br>
+
+1.Text-to-Image Generation: Users can describe a scene, object, or character in natural language, and Brog will generate an image that matches the prompt.
+<br>
+2.Creative Style Control: From photorealism to anime, abstract art to pixel graphics, Brog supports a wide range of visual styles.
+<br>
+3.Rapid Prototyping: Ideal for designers, marketers, game developers, and content creators needing quick visual drafts or concept art.
+<br>
+4.Custom Model Training (optional): Brog can be fine-tuned with specific datasets to generate consistent brand visuals or character designs.
+<br>
+5.Multimodal Input (if enabled): Accepts additional inputs like reference images, mood boards, or sketches to guide image creation.
+<br><br>
+Uses:<br><br>
+Entertainment & Gaming: Character design, game scenes, and concept art.
+<br>
+Marketing & Branding: Ad creatives, product mockups, and visual campaigns.
+<br>
+Education & Research: Visual aids, data visualization, and simulated environments.
+<br>
+Social Media & Content Creation: Unique images for posts, thumbnails, and storytelling.
+        </p>
+    </div>
+
+</body>
+    <style>
+        body{
+            background-image: linear-gradient(to right, #1a1a1a, #605a56);
+
+}
+#infoGrid{
+    display:flex;
+    padding: 30px;
+}
+#aboutshezzy{
+    padding: 50px;
+}
+#aboutbrog{
+    padding: 50px;
+    margin-right: 10px;
+    margin-left: 90px;
+}
+
+#buttondiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+.aibtn {
+     border-radius: 4px;
+  background-color: #2a428c;
+  
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+   background-color: #8a1bc5;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+     position: relative;
+  transition: 0.5s;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.aibtn:hover  {
+  padding-right: 25px;
+   opacity: 0.5;
+  right: 0;
+}
+
+.about{
+    color: rgb(179, 174, 174);
+    text-align: left;
+    font-size: 1.2em;
+    margin-top: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.dropbtn{
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+}
+.dropbtn:hover{
+    opacity: 0.8;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+ position: fixed;
+    top: 55px;
+    right: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+  background-color: #3c3b3b;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #545353;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+   
+
+
+
+#heading{
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+      font-family: Arial, sans-serif;
+      
+}
+
+
+@keyframes example {
+    0% {color: white;}
+    25% {color: #b2b0b9;}
+  50%  {color: rgb(0, 0, 0);}
+  100% {color: rgb(255, 255, 255);}
+    
+}
+.input-container{
+    background-image: linear-gradient(to right, #1a1a1a, #605a56);
+    width: 100%;
+    position: fixed;
+    justify-content: center;
+    bottom:0;
+    margin-bottom:10px ;
+    
+}
+.sub-heading{
+      font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+#messageInput{
+    
+    margin-left: 240px;
+    width: 900px;
+    padding: 15px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+#send-btn{
+
+    
+    padding: 15px 30px;
+    font-size: 1em;
+    border: none;
+    border-radius: 15px;
+    background-color: #2a428c;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#send-btn:hover {
+    background-color: #9ec1b4;
+    transition: background-color 0.3s ease;
+}
+
+    </style>
+     <script>
+
+function toggleDropdown() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+</script>
+
+
+ 
+</html>
+

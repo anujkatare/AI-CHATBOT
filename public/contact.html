@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <h1 id="heading">CONTACT US</h1>
+    <div class="dropdown">
+            <div ><img src="png_rsfpl.png" width="40px" class="dropbtn" onclick="toggleDropdown()" >
+        <div id="myDropdown" class="dropdown-content">
+       <a href="index.html" class="model">HOME</a>
+       <a href="shezzy.html"  class="model">SHEZZY</a>
+       <a href="contact.html"  class="model">Contact Us</a>
+     </div>
+    </div>
+    </div>
+    <div class="icons">
+     <a href="https://in.linkedin.com/in/anuj-katare-b7045b32b"><img class="logos" src="linkedin.png"></a>
+      <a href="https://github.com/anujkatare"><img class="logos" src="github.png"></a>
+       <a href="https://www.instagram.com/theyhates.anuj/"><img class="logos" src="instagram.png"></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRsqXrBTbxqNWgltsFDqRCmSFXfBwnVtxqjdsLxcdZbXdDstzhSzFqbJlqRqhjNXCKWZlgg"><img  class="logos" src="gmail_5968534.png"></a>
+    </div>
+</body>
+<style>
+     body{
+            background-image: linear-gradient(to right, #1a1a1a, #605a56);
+
+}
+.icons{
+    margin-top: 0px;
+    justify-content: center;
+    display: flex;
+}
+
+ .logos{
+    width: 80px;
+    padding: 60px;
+    
+}
+.logos:hover{
+    opacity: 0.5;
+    width: 85px;
+}
+
+.dropbtn{
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+}
+.dropbtn:hover{
+    opacity: 0.8;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+ position: fixed;
+    top: 55px;
+    right: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+  background-color: #3c3b3b;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #545353;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+#heading{
+    margin-top: 200px;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+      font-family: Arial, sans-serif;
+      
+}
+
+</style>
+<script>
+    function toggleDropdown() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</html>
