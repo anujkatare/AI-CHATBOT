@@ -20,9 +20,7 @@ This project is a simple AI-powered chatbot and image generator web app using No
 ### Installation
 
 1. Clone the repository:
-    ```
- cd AI-CHATBOT
-    ```
+    
 
 2. Install dependencies:
     ```
