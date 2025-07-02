@@ -1,4 +1,4 @@
-# AI-CHATBOT
+ # AI-CHATBOT
 
 This project is a simple AI-powered chatbot and image generator web app using Node.js, Express, and Hugging Face and DeepSeek APIs.
 
@@ -27,17 +27,21 @@ This project is a simple AI-powered chatbot and image generator web app using No
     npm install
     ```
 
-3. Create a `.env` file and add your Hugging Face API key:
+3. Create a `.env` file and add your Hugging Face API key to brog.html :
     ```
     HF_TOKEN=your_huggingface_api_key
     ```
+4. Create a `.env` file and add your deepseek free API key from openrouter to shezzy.html :
+    ```
+    Authorization =  your_deepseek_api_key
+    ```
 
-4. Start the server:
+5. Start the server:
     ```
     node server.js
     ```
 
-5. Open your browser and go to [http://localhost:3000](http://localhost:3000)
+6. Open your browser and go to [http://localhost:3000](http://localhost:3000)
 
 ## Project Structure
 
